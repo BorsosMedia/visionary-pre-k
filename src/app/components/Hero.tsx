@@ -1,4 +1,5 @@
 import { Calendar, MessageCircle, Sparkles } from 'lucide-react';
+import { Link } from 'react-router';
 import heroBackgroundImg from '../../imports/hero-background-apr21.png';
 
 export function Hero() {
@@ -30,15 +31,13 @@ export function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-          <a
-            href="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZwLDfcYl0uxmGu"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/schedule-tour"
             className="group bg-[#EB9833] text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-[#d88829] transition shadow-2xl flex items-center justify-center gap-3"
           >
             <Calendar className="w-6 h-6" />
             Schedule a Tour
-          </a>
+          </Link>
           <a
             href="tel:713-520-6633"
             className="group bg-white text-[#000000] px-10 py-5 rounded-full font-bold text-lg hover:bg-[#EB9833] hover:text-white transition shadow-2xl flex items-center justify-center gap-3"

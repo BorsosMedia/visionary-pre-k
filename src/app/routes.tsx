@@ -12,6 +12,7 @@ import { HealthSafety } from "./pages/HealthSafety";
 import { Careers } from "./pages/Careers";
 import { ParentReviews } from "./pages/ParentReviews";
 import { ContactUs } from "./pages/ContactUs";
+import { ScheduleTour } from "./pages/ScheduleTour";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,7 @@ export const router = createBrowserRouter([
       { path: "careers", Component: Careers },
       { path: "parent-reviews", Component: ParentReviews },
       { path: "contact", Component: ContactUs },
+      { path: "schedule-tour", Component: ScheduleTour },
     ],
   },
 ]);

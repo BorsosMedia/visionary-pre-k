@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Link } from 'react-router';
 import logoImg from '../../imports/logo.png';
 
 export function Footer() {
@@ -100,7 +101,7 @@ export function Footer() {
           <div>
             <h4 className="font-bold mb-4 text-white">Resources</h4>
             <ul className="space-y-2 text-sm text-white/80">
-              <li><a href="#careers" className="hover:text-[#EB9833] transition">Careers</a></li>
+              <li><Link to="/careers" className="hover:text-[#EB9833] transition">Careers</Link></li>
               <li><a href="#tuition" className="hover:text-[#EB9833] transition">Tuition Support</a></li>
               <li><a href="#parent-resources" className="hover:text-[#EB9833] transition">Parent Resources</a></li>
               <li><a href="#calendar" className="hover:text-[#EB9833] transition">Calendar</a></li>

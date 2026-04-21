@@ -114,12 +114,12 @@ export function Navigation() {
 
             {/* Right - CTA Button */}
             <div className="hidden md:flex justify-end">
-              <a
-                href="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZwLDfcYl0uxmGu"
+              <Link
+                to="/schedule-tour"
                 className="bg-[#000000] text-white px-8 py-3 rounded-full font-bold hover:bg-[#1a1a1a] transition uppercase tracking-wide text-sm"
               >
                 Schedule a Tour
-              </a>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -151,12 +151,12 @@ export function Navigation() {
                 <Link to="/careers" className="pl-4 text-[#6B6A64] hover:text-[#EB9833]">Careers</Link>
                 <Link to="/parent-reviews" className="pl-4 text-[#6B6A64] hover:text-[#EB9833]">Parent Reviews</Link>
                 <Link to="/contact" className="pl-4 text-[#6B6A64] hover:text-[#EB9833]">Contact Us</Link>
-                <a
-                  href="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZwLDfcYl0uxmGu"
+                <Link
+                  to="/schedule-tour"
                   className="bg-[#000000] text-white px-6 py-3 rounded-full font-bold text-center mt-4 uppercase tracking-wide text-sm"
                 >
                   Schedule a Tour
-                </a>
+                </Link>
               </div>
             </div>
           )}

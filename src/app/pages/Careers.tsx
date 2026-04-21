@@ -295,7 +295,7 @@ export function Careers() {
       </section>
 
       {/* Open Positions */}
-      <section className="py-20 bg-[#EB9833] text-white">
+      <section className="py-20 bg-[#EB9833] text-black">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <TrendingUp className="w-16 h-16 mx-auto mb-6" />
@@ -338,11 +338,6 @@ export function Careers() {
             </div>
           </div>
 
-          <div className="text-center">
-            <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-black/90 transition">
-              Apply Now - Join Our Team!
-            </button>
-          </div>
         </div>
       </section>
     </div>

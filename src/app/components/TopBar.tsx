@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { Link } from 'react-router';
 
 export function TopBar() {
   return (
@@ -22,15 +23,7 @@ export function TopBar() {
           </div>
         </div>
         <div className="hidden md:flex items-center gap-3">
-          <a href="#careers" className="hover:opacity-80">We're Hiring</a>
-          <a
-            href="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZwLDfcYl0uxmGu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#EB9833] text-white px-5 py-2 rounded-full font-medium hover:bg-opacity-90 transition"
-          >
-            Schedule a Tour
-          </a>
+          <Link to="/careers" className="hover:opacity-80">We're Hiring</Link>
         </div>
       </div>
     </div>
