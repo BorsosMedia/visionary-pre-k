@@ -1,5 +1,5 @@
 import { Calendar, MessageCircle, Sparkles } from 'lucide-react';
-import heroBackgroundImg from '../../imports/ChatGPT_Image_Apr_20,_2026,_12_22_39_PM.png';
+import heroBackgroundImg from '../../imports/hero-background-apr21.png';
 
 export function Hero() {
   return (
@@ -9,13 +9,13 @@ export function Hero() {
         <img
           src={heroBackgroundImg}
           alt="Happy child"
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-[center_12%]"
         />
         {/* Gradient overlay to ensure text readability at bottom */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 pb-8 md:pb-10 relative z-10 w-full text-center">
+      <div className="max-w-4xl mx-auto px-6 pb-2 md:pb-4 relative z-10 w-full text-center translate-y-8 md:translate-y-12">
         {/* Badge */}
        
 
