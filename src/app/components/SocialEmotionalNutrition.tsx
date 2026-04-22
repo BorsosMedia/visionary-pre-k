@@ -1,5 +1,7 @@
 ﻿import { Heart, Apple } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import socialEmotionalImg from '../../imports/Strengthen-The-Parent-Child-Relationship-For-Lasting-Success-1.jpg';
+import nutritiousMealsImg from '../../imports/Nutritious-Meals-With-Vegan-Options-At-No-Extra-Cost-1-1024x731.jpg';
 
 export function SocialEmotionalNutrition() {
   return (
@@ -9,7 +11,7 @@ export function SocialEmotionalNutrition() {
           {/* Social-Emotional Image */}
           <div className="rounded-2xl overflow-hidden shadow-xl">
             <ImageWithFallback
-              src="https://c2cpreschool.org/wp-content/uploads/2021/02/C2C-Hero-1.jpg"
+              src={socialEmotionalImg}
               alt="Children sitting together on grass"
               className="w-full h-[400px] object-cover"
             />
@@ -42,7 +44,7 @@ export function SocialEmotionalNutrition() {
           {/* Nutrition Image */}
           <div className="rounded-2xl overflow-hidden shadow-xl">
             <ImageWithFallback
-              src="https://c2cpreschool.org/wp-content/uploads/2021/02/C2C-Hero-1.jpg"
+              src={nutritiousMealsImg}
               alt="Mother and daughter preparing healthy food"
               className="w-full h-[400px] object-cover"
             />

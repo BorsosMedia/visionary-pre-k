@@ -187,6 +187,11 @@
     color: var(--black);
   }
 
+  /* Balanced line breaks for multi-line headings (low specificity via :where) */
+  :where(h1, h2, h3, h4, h5, h6) {
+    text-wrap: balance;
+  }
+
   p {
     font-size: var(--text-body);
     line-height: 1.6;

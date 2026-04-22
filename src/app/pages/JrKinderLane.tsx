@@ -10,6 +10,8 @@
 } from "lucide-react";
 import { Link } from "react-router";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import lifeSkillsImg from "../../imports/Your-Child-Gains-Life-Skills-And-Classroom-Basics-Now-1-1024x764.jpg";
+import strengthenRelationshipImg from "../../imports/Strengthen-The-Parent-Child-Relationship-For-Lasting-Success-1.jpg";
 
 export function JrKinderLane() {
   return (
@@ -230,7 +232,7 @@ export function JrKinderLane() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <ImageWithFallback
-                src="https://c2cpreschool.org/wp-content/uploads/2021/02/C2C-Hero-1.jpg"
+                src={lifeSkillsImg}
                 alt="Child using tablet for learning"
                 className="w-full h-[400px] object-cover"
               />
@@ -245,7 +247,7 @@ export function JrKinderLane() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
               <ImageWithFallback
-                src="https://c2cpreschool.org/wp-content/uploads/2021/02/C2C-Hero-1.jpg"
+                src={strengthenRelationshipImg}
                 alt="Children playing together"
                 className="w-full h-[500px] object-cover"
               />

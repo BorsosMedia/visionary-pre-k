@@ -9,6 +9,8 @@
   Star,
 } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import mentorsWithChildrenImg from "../../imports/50-Yrs-Combined-Expertise-Shape-Your-Childs-Learning-1024x738.jpg";
+import workFamilyImg from "../../imports/A-Family-Owned-Environment-That-Feels-Just-Like-Home.jpg";
 
 export function Careers() {
   return (
@@ -34,7 +36,7 @@ export function Careers() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <ImageWithFallback
-                src="https://c2cpreschool.org/wp-content/uploads/2021/02/C2C-Hero-1.jpg"
+                src={mentorsWithChildrenImg}
                 alt="Happy teacher with children"
                 className="w-full h-[500px] object-cover"
               />
@@ -119,7 +121,7 @@ export function Careers() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <ImageWithFallback
-                src="https://c2cpreschool.org/wp-content/uploads/2021/02/C2C-Hero-1.jpg"
+                src={workFamilyImg}
                 alt="Team working together"
                 className="w-full h-[500px] object-cover"
               />
