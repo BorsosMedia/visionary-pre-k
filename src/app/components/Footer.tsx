@@ -22,10 +22,34 @@ export function Footer() {
   return (
     <footer className="bg-[#000000] text-white py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* Locations */}
-          <div className="lg:col-span-2">
-            <h4 className="font-bold mb-4 text-white">Our Locations</h4>
+        <div className="grid lg:grid-cols-4 gap-12 mb-12">
+          {/* Brand & Contact (left) */}
+          <div className="lg:col-span-1 flex flex-col lg:h-full lg:min-h-0">
+            <div className="mb-6">
+              <img
+                src={logoImg}
+                alt="Visionary Preschool"
+                className="h-12 w-auto object-contain brightness-0 invert"
+              />
+            </div>
+            <div className="space-y-3 text-sm text-white/80">
+              <a href="tel:713-520-6633" className="flex items-center gap-2 hover:text-[#EB9833] transition">
+                <Phone className="w-4 h-4" />
+                <span>713-520-6633</span>
+              </a>
+              <a href="mailto:info@cradles2crayons.com" className="flex items-center gap-2 hover:text-[#EB9833] transition">
+                <Mail className="w-4 h-4" />
+                <span>info@visionaryprek.com</span>
+              </a>
+            </div>
+            <div className="text-white/60 text-xs mt-4 lg:mt-auto lg:pt-4">
+              7:00 AM - 5:45 PM (Mon - Fri)
+            </div>
+          </div>
+
+          {/* Locations: on lg, title + grid sit at bottom (with hours) so no large gap above the heading */}
+          <div className="lg:col-span-3 flex flex-col lg:h-full lg:min-h-0 lg:justify-end">
+            <h4 className="font-bold mb-2 text-white shrink-0">Our Locations</h4>
             <div className="grid sm:grid-cols-2 gap-6">
               {/* Location 1 */}
               <div className="space-y-2 text-sm text-white/80">
@@ -49,44 +73,8 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Brand & Contact */}
-          <div>
-            <div className="mb-6">
-              <img
-                src={logoImg}
-                alt="Visionary Preschool"
-                className="h-12 w-auto object-contain brightness-0 invert"
-              />
-            </div>
-            <div className="space-y-3 text-sm text-white/80">
-              <a href="tel:713-520-6633" className="flex items-center gap-2 hover:text-[#EB9833] transition">
-                <Phone className="w-4 h-4" />
-                <span>713-520-6633</span>
-              </a>
-              <a href="mailto:info@cradles2crayons.com" className="flex items-center gap-2 hover:text-[#EB9833] transition">
-                <Mail className="w-4 h-4" />
-                <span>info@visionaryprek.com</span>
-              </a>
-              <div className="text-white/60 text-xs mt-4">
-                7:00 AM - 5:45 PM (Mon - Fri)
-              </div>
-            </div>
-          </div>
-
-          {/* Programs */}
-          <div>
-            <h4 className="font-bold mb-4 text-white">Programs</h4>
-            <ul className="space-y-2 text-sm text-white/80">
-              {programs.map((item, index) => (
-                <li key={index}>
-                  <Link to={item.to} className="hover:text-[#EB9833] transition">{item.name}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* About */}
-          <div>
+          <div className="lg:col-span-1">
             <h4 className="font-bold mb-4 text-white">About</h4>
             <ul className="space-y-2 text-sm text-white/80">
               {about.map((item, index) => (
@@ -98,7 +86,7 @@ export function Footer() {
           </div>
 
           {/* Resources */}
-          <div>
+          <div className="lg:col-span-1">
             <h4 className="font-bold mb-4 text-white">Resources</h4>
             <ul className="space-y-2 text-sm text-white/80">
               <li><Link to="/careers" className="hover:text-[#EB9833] transition">Careers</Link></li>
@@ -106,6 +94,18 @@ export function Footer() {
               <li><Link to="/parent-reviews" className="hover:text-[#EB9833] transition">Parent Resources</Link></li>
               <li><Link to="/schedule-tour" className="hover:text-[#EB9833] transition">Calendar</Link></li>
               <li><Link to="/contact" className="hover:text-[#EB9833] transition">Contact Us</Link></li>
+            </ul>
+          </div>
+
+          {/* Programs (same row as About & Resources on desktop) */}
+          <div className="lg:col-span-1">
+            <h4 className="font-bold mb-4 text-white">Programs</h4>
+            <ul className="space-y-2 text-sm text-white/80">
+              {programs.map((item, index) => (
+                <li key={index}>
+                  <Link to={item.to} className="hover:text-[#EB9833] transition">{item.name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
