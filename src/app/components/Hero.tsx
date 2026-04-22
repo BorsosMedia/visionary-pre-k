@@ -1,4 +1,4 @@
-import { Calendar, MessageCircle, Sparkles } from 'lucide-react';
+import { Calendar, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router';
 import heroBackgroundImg from '../../imports/hero-background-apr21.png';
 
@@ -16,7 +16,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 pb-2 md:pb-4 relative z-10 w-full text-center translate-y-8 md:translate-y-12">
+      <div className="max-w-4xl mx-auto px-6 pb-10 md:pb-14 relative z-10 w-full text-center translate-y-4 md:translate-y-8">
         {/* Badge */}
        
 
@@ -30,7 +30,7 @@ export function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/schedule-tour"
             className="group bg-[#EB9833] text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-[#d88829] transition shadow-2xl flex items-center justify-center gap-3"
@@ -46,10 +46,6 @@ export function Hero() {
             Talk to Us
           </a>
         </div>
-
-        <p className="text-white/60 text-sm">
-          Preschool & Daycare Center Serving Houston, TX
-        </p>
       </div>
     </section>
   );
