@@ -68,7 +68,7 @@ export function DiscoveryDayCTA() {
 
         {/* CTA Button */}
         <a
-          href="#pricing"
+          href="/schedule-tour"
           className="group bg-[#EB9833] text-white px-14 py-6 rounded-full font-bold text-xl hover:bg-[#d88829] transition inline-flex items-center gap-3 shadow-2xl hover:shadow-[#EB9833]/50 hover:scale-105"
         >
           <span>Get Pricing & Details Now</span>

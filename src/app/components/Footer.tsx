@@ -1,22 +1,22 @@
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
 import { Link } from 'react-router';
 import logoImg from '../../imports/logo.png';
 
 export function Footer() {
   const programs = [
-    { name: 'Explorer\'s Avenue', href: '#explorer' },
-    { name: 'Jr. Kinder Lane', href: '#kinder' },
-    { name: 'Crayon Club', href: '#crayon' },
-    { name: 'Summer Camp', href: '#summer' },
+    { name: "Explorer's Avenue", to: '/explorers-avenue' },
+    { name: 'Jr. Kinder Lane', to: '/jr-kinder-lane' },
+    { name: 'Crayon Club', to: '/crayon-club' },
+    { name: 'Summer Camp', to: '/summer-camp' },
   ];
 
   const about = [
-    { name: 'Center of Excellence', href: '#excellence' },
-    { name: 'Texas Rising Star', href: '#tsr' },
-    { name: 'Curriculum', href: '#curriculum' },
-    { name: 'Daily Enrichments', href: '#enrichments' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'Center of Excellence', to: '/#excellence' },
+    { name: 'Texas Rising Star', to: '/#tsr' },
+    { name: 'Curriculum', to: '/#curriculum' },
+    { name: 'Daily Enrichments', to: '/#enrichments' },
+    { name: 'Testimonials', to: '/#testimonials' },
+    { name: 'FAQ', to: '/#faq' },
   ];
 
   return (
@@ -79,7 +79,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-white/80">
               {programs.map((item, index) => (
                 <li key={index}>
-                  <a href={item.href} className="hover:text-[#EB9833] transition">{item.name}</a>
+                  <Link to={item.to} className="hover:text-[#EB9833] transition">{item.name}</Link>
                 </li>
               ))}
             </ul>
@@ -91,7 +91,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-white/80">
               {about.map((item, index) => (
                 <li key={index}>
-                  <a href={item.href} className="hover:text-[#EB9833] transition">{item.name}</a>
+                  <Link to={item.to} className="hover:text-[#EB9833] transition">{item.name}</Link>
                 </li>
               ))}
             </ul>
@@ -102,28 +102,41 @@ export function Footer() {
             <h4 className="font-bold mb-4 text-white">Resources</h4>
             <ul className="space-y-2 text-sm text-white/80">
               <li><Link to="/careers" className="hover:text-[#EB9833] transition">Careers</Link></li>
-              <li><a href="#tuition" className="hover:text-[#EB9833] transition">Tuition Support</a></li>
-              <li><a href="#parent-resources" className="hover:text-[#EB9833] transition">Parent Resources</a></li>
-              <li><a href="#calendar" className="hover:text-[#EB9833] transition">Calendar</a></li>
-              <li><a href="#contact" className="hover:text-[#EB9833] transition">Contact Us</a></li>
+              <li><Link to="/tuition-support" className="hover:text-[#EB9833] transition">Tuition Support</Link></li>
+              <li><Link to="/parent-reviews" className="hover:text-[#EB9833] transition">Parent Resources</Link></li>
+              <li><Link to="/schedule-tour" className="hover:text-[#EB9833] transition">Calendar</Link></li>
+              <li><Link to="/contact" className="hover:text-[#EB9833] transition">Contact Us</Link></li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-white/20 pt-8 flex flex-wrap justify-between items-center gap-4">
-          <p className="text-sm text-white/70">
-            © 2026 Visionary Pre K Early Learning Academy. All Rights Reserved | Privacy Policy | Powered By Grow Your Center
-          </p>
+          <div className="text-sm text-white/70 space-y-1">
+            <p>
+              © 2026 Visionary Pre K Early Learning Academy. All Rights Reserved |{' '}
+              <Link to="/privacy-policy" className="hover:text-[#EB9833] transition hover:underline underline-offset-2">
+                Privacy Policy
+              </Link>
+            </p>
+            <p>
+              Design and Development by{' '}
+              <a
+                href="https://www.borsosmedia.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#EB9833] transition"
+              >
+                Borsos Media
+              </a>
+            </p>
+          </div>
           <div className="flex gap-4">
-            <a href="#facebook" className="text-white/70 hover:text-[#EB9833] transition" aria-label="Facebook">
+            <a href="https://www.facebook.com/C2CSchool/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-[#EB9833] transition" aria-label="Facebook">
               <Facebook className="w-5 h-5" />
             </a>
-            <a href="#instagram" className="text-white/70 hover:text-[#EB9833] transition" aria-label="Instagram">
+            <a href="https://www.instagram.com/cradles2crayonshtx" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-[#EB9833] transition" aria-label="Instagram">
               <Instagram className="w-5 h-5" />
-            </a>
-            <a href="#linkedin" className="text-white/70 hover:text-[#EB9833] transition" aria-label="LinkedIn">
-              <Linkedin className="w-5 h-5" />
             </a>
           </div>
         </div>

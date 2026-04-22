@@ -19,7 +19,7 @@ export function TexasRisingStar() {
   ];
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-20" id="tsr">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
           {/* Left Content */}

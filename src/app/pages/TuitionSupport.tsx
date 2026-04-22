@@ -208,9 +208,12 @@ export function TuitionSupport() {
                 >
                   Call 713-520-6633
                 </a>
-                <button className="bg-white text-[#EB9833] border-2 border-[#EB9833] px-10 py-4 rounded-full text-lg font-bold hover:bg-[#EB9833] hover:text-white transition">
+                <a
+                  href="/schedule-tour"
+                  className="bg-white text-[#EB9833] border-2 border-[#EB9833] px-10 py-4 rounded-full text-lg font-bold hover:bg-[#EB9833] hover:text-white transition inline-block"
+                >
                   Get Pricing & Details
-                </button>
+                </a>
               </div>
             </div>
           </div>

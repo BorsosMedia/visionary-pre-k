@@ -72,11 +72,15 @@ export function ContactUs() {
             </p>
           </div>
 
-          {/* Paste your iframe here */}
-          <div className="bg-[#EDE3D9] rounded-2xl p-8 border border-[#D4C9BA]">
-            <p className="text-center text-[#6B6A64]">
-              Contact form will appear here
-            </p>
+          <div className="bg-[#EDE3D9] rounded-2xl border border-[#D4C9BA] overflow-hidden h-[900px]">
+            <iframe
+              src="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZZwLDfcYl0uxmGu"
+              title="Contact Form"
+              style={{ width: "100%", border: "none", height: "100%" }}
+              frameBorder="0"
+              allowFullScreen
+              tabIndex={-1}
+            />
           </div>
         </div>
       </section>

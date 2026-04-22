@@ -30,7 +30,7 @@ export function FAQAccordion() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-br from-[#EDE3D9] via-[#F5EFE7] to-[#EDE3D9] py-20 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-[#EDE3D9] via-[#F5EFE7] to-[#EDE3D9] py-20 overflow-hidden" id="faq">
       {/* Decorative Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 right-20 w-40 h-40 bg-[#EB9833] rounded-full blur-3xl"></div>

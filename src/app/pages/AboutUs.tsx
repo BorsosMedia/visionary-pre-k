@@ -192,9 +192,12 @@ export function AboutUs() {
             >
               Schedule a Tour
             </a>
-            <button className="bg-white text-[#EB9833] px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition">
+            <a
+              href="/schedule-tour"
+              className="bg-white text-[#EB9833] px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition inline-block text-center"
+            >
               Get Pricing Info
-            </button>
+            </a>
           </div>
         </div>
       </section>

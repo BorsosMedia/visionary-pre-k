@@ -9,7 +9,7 @@ export function TuitionSupportBanner() {
             Yes, We Offer Tuition Support Options
           </h3>
           <a
-            href="#pricing"
+            href="/schedule-tour"
             className="bg-[#EB9833] text-white px-8 py-4 rounded-full font-semibold hover:bg-opacity-90 transition inline-block shadow-md"
           >
             Check Out Tuition Support Options Now
