@@ -15,13 +15,13 @@ export function PlaygroundApp() {
           {/* Left Content */}
           <div>
             <p className="text-sm text-[#EB9833] bg-white px-4 py-2 rounded-full inline-block mb-4">
-              Receive Cute Pictures, Fun Videos, Parent Notes, & More With The PlaygroundÂ© App!
+              Receive Cute Pictures, Fun Videos, Parent Notes, & More With The Playground® App!
             </p>
             <h2 className="text-white mb-6">
               Your Child's Day Is Just A Click Away
             </h2>
             <p className="text-white/90 mb-8">
-              Caring and thoughtful teachers use the PlaygroundÂ© app to include you in all the milestones that make your child's early learning years so special. You can't wait to receive pictures, videos, notes, and daily reports on your little one's progress and developments!
+              Caring and thoughtful teachers use the Playground® app to include you in all the milestones that make your child's early learning years so special. You can't wait to receive pictures, videos, notes, and daily reports on your little one's progress and developments!
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               {features.map((feature, index) => (

@@ -55,28 +55,28 @@ export function Careers() {
                 </h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">âœ“</span>
+                    <span className="text-[#EB9833]">✓</span>
                     <span>
                       One-on-one mentorship from experienced
                       educators
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">âœ“</span>
+                    <span className="text-[#EB9833]">✓</span>
                     <span>
                       Ongoing training and professional
                       development
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">âœ“</span>
+                    <span className="text-[#EB9833]">✓</span>
                     <span>
                       Support from leadership every step of the
                       way
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">âœ“</span>
+                    <span className="text-[#EB9833]">✓</span>
                     <span>
                       Resources and tools to help you succeed
                     </span>
@@ -218,7 +218,7 @@ export function Careers() {
               <Star className="w-12 h-12 text-[#EB9833] mb-4" />
               <h3 className="mb-4">Celebration Culture</h3>
               <p className="mb-4">
-                You're Important Tooâ€” So Let's Celebrate You!
+                You're Important Too — So Let's Celebrate You!
               </p>
               <p className="text-sm text-[#6B6A64]">
                 Enjoy the perfect balance of work and fun by
@@ -243,7 +243,7 @@ export function Careers() {
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-[#EB9833] rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white text-sm">
-                      âœ“
+                      ✓
                     </span>
                   </div>
                   <span>Annual Training</span>
@@ -251,7 +251,7 @@ export function Careers() {
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-[#EB9833] rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white text-sm">
-                      âœ“
+                      ✓
                     </span>
                   </div>
                   <span>Orientation</span>
@@ -259,7 +259,7 @@ export function Careers() {
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-[#EB9833] rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white text-sm">
-                      âœ“
+                      ✓
                     </span>
                   </div>
                   <span>CPR & First Aid</span>
@@ -267,7 +267,7 @@ export function Careers() {
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-[#EB9833] rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white text-sm">
-                      âœ“
+                      ✓
                     </span>
                   </div>
                   <span>Shaken Baby Syndrome</span>
@@ -275,7 +275,7 @@ export function Careers() {
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-[#EB9833] rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white text-sm">
-                      âœ“
+                      ✓
                     </span>
                   </div>
                   <span>Background Check</span>
@@ -283,7 +283,7 @@ export function Careers() {
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-[#EB9833] rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white text-sm">
-                      âœ“
+                      ✓
                     </span>
                   </div>
                   <span>Fingerprinting Check</span>
@@ -315,10 +315,10 @@ export function Careers() {
                 (w/ Training, Perks, Benefits)
               </p>
               <ul className="space-y-2 text-sm mb-6">
-                <li>â€¢ Lead classroom instruction</li>
-                <li>â€¢ Implement curriculum</li>
-                <li>â€¢ Build relationships with families</li>
-                <li>â€¢ CDA or equivalent preferred</li>
+                <li>• Lead classroom instruction</li>
+                <li>• Implement curriculum</li>
+                <li>• Build relationships with families</li>
+                <li>• CDA or equivalent preferred</li>
               </ul>
             </div>
 
@@ -330,10 +330,10 @@ export function Careers() {
                 (w/ Training, Perks, Benefits)
               </p>
               <ul className="space-y-2 text-sm mb-6">
-                <li>â€¢ Support lead teacher</li>
-                <li>â€¢ Assist with daily activities</li>
-                <li>â€¢ Supervise children</li>
-                <li>â€¢ Experience with children preferred</li>
+                <li>• Support lead teacher</li>
+                <li>• Assist with daily activities</li>
+                <li>• Supervise children</li>
+                <li>• Experience with children preferred</li>
               </ul>
             </div>
           </div>

@@ -11,6 +11,7 @@ import {
   Utensils,
   Shield,
 } from "lucide-react";
+import { Link } from "react-router";
 import empowerFamilyImg from '../../imports/Empower-Your-Family-Join-A-Certified-Center-Of-Excellence-1024x756.jpg';
 
 export function WhyChooseUs() {
@@ -276,14 +277,12 @@ export function WhyChooseUs() {
             See for yourself why families choose us for their
             children's early education
           </p>
-          <a
-            href="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZwLDfcYl0uxmGu"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/schedule-tour"
             className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-black/90 transition inline-block"
           >
             Schedule a Tour Today
-          </a>
+          </Link>
         </div>
       </section>
     </div>

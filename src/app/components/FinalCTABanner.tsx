@@ -1,4 +1,5 @@
 import { Phone, Sparkles, Calendar, MapPin } from 'lucide-react';
+import { Link } from 'react-router';
 
 export function FinalCTABanner() {
   return (
@@ -27,15 +28,13 @@ export function FinalCTABanner() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-          <a
-            href="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZwLDfcYl0uxmGu"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/schedule-tour"
             className="group bg-white text-[#EB9833] px-12 py-5 rounded-full font-bold text-lg hover:bg-[#EDE3D9] transition shadow-2xl flex items-center justify-center gap-2"
           >
             <Calendar className="w-5 h-5" />
             Schedule Your Tour Today
-          </a>
+          </Link>
           <a
             href="tel:713-520-6633"
             className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-12 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-[#EB9833] transition shadow-xl flex items-center justify-center gap-2"

@@ -8,6 +8,7 @@
   Users,
   Award,
 } from "lucide-react";
+import { Link } from "react-router";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export function JrKinderLane() {
@@ -39,15 +40,14 @@ export function JrKinderLane() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="mb-6">
-              Texas School-Readyâ„¢ Certification Guarantees
-              Success
+              Texas School Ready™ Certification Guarantees Success
             </h2>
             <p className="text-lg max-w-4xl mx-auto">
               Our Jr. Kinder program is certified by Texas
-              School-Readyâ„¢, meaning your child will enter
+              School Ready™, meaning your child will enter
               Kindergarten with all the academic, social, and
               emotional skills needed to thrive. This is more
-              than Pre-Kâ€”it's a proven pathway to school
+              than pre-K—it's a proven pathway to school
               success.
             </p>
           </div>
@@ -109,8 +109,8 @@ export function JrKinderLane() {
               A Comprehensive Curriculum That Covers It All
             </h2>
             <p className="text-lg max-w-3xl mx-auto">
-              We integrate Frog StreetÂ©, Conscious
-              DisciplineÂ©, and Footsteps2BrillianceÂ® to create
+              We integrate Frog Street, Conscious Discipline, and
+              Footsteps2Brilliance to create
               a rich, engaging learning environment that
               addresses every area of development.
             </p>
@@ -126,13 +126,13 @@ export function JrKinderLane() {
                 <h3>Literacy & Language Arts</h3>
               </div>
               <ul className="space-y-2 text-[#6B6A64]">
-                <li>â€¢ Phonemic awareness and letter sounds</li>
-                <li>â€¢ Reading simple books and sight words</li>
-                <li>â€¢ Story comprehension and retelling</li>
+                <li>• Phonemic awareness and letter sounds</li>
+                <li>• Reading simple books and sight words</li>
+                <li>• Story comprehension and retelling</li>
                 <li>
-                  â€¢ Vocabulary expansion through rich texts
+                  • Vocabulary expansion through rich texts
                 </li>
-                <li>â€¢ Beginning writing and journaling</li>
+                <li>• Beginning writing and journaling</li>
               </ul>
             </div>
 
@@ -146,12 +146,12 @@ export function JrKinderLane() {
               </div>
               <ul className="space-y-2 text-[#6B6A64]">
                 <li>
-                  â€¢ Number recognition and counting to 100
+                  • Number recognition and counting to 100
                 </li>
-                <li>â€¢ Addition and subtraction concepts</li>
-                <li>â€¢ Patterns, sorting, and graphing</li>
-                <li>â€¢ Measurement and comparison</li>
-                <li>â€¢ Geometry and spatial reasoning</li>
+                <li>• Addition and subtraction concepts</li>
+                <li>• Patterns, sorting, and graphing</li>
+                <li>• Measurement and comparison</li>
+                <li>• Geometry and spatial reasoning</li>
               </ul>
             </div>
 
@@ -164,17 +164,17 @@ export function JrKinderLane() {
                 <h3>Science Exploration</h3>
               </div>
               <ul className="space-y-2 text-[#6B6A64]">
-                <li>â€¢ Hands-on experiments and observations</li>
+                <li>• Hands-on experiments and observations</li>
                 <li>
-                  â€¢ Life science (plants, animals, habitats)
+                  • Life science (plants, animals, habitats)
                 </li>
                 <li>
-                  â€¢ Physical science (magnets, weather, matter)
+                  • Physical science (magnets, weather, matter)
                 </li>
                 <li>
-                  â€¢ Earth science (seasons, recycling, nature)
+                  • Earth science (seasons, recycling, nature)
                 </li>
-                <li>â€¢ Scientific method and inquiry skills</li>
+                <li>• Scientific method and inquiry skills</li>
               </ul>
             </div>
 
@@ -187,11 +187,11 @@ export function JrKinderLane() {
                 <h3>Social Studies</h3>
               </div>
               <ul className="space-y-2 text-[#6B6A64]">
-                <li>â€¢ Community helpers and careers</li>
-                <li>â€¢ Maps, globes, and geography basics</li>
-                <li>â€¢ Cultural diversity and celebrations</li>
-                <li>â€¢ Citizenship and responsibility</li>
-                <li>â€¢ History and time concepts</li>
+                <li>• Community helpers and careers</li>
+                <li>• Maps, globes, and geography basics</li>
+                <li>• Cultural diversity and celebrations</li>
+                <li>• Citizenship and responsibility</li>
+                <li>• History and time concepts</li>
               </ul>
             </div>
           </div>
@@ -204,7 +204,7 @@ export function JrKinderLane() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="mb-6">
-                Footsteps2BrillianceÂ® Technology-Enhanced
+                Footsteps2Brilliance® technology-enhanced
                 Learning
               </h2>
               <p className="text-lg mb-6">
@@ -255,9 +255,9 @@ export function JrKinderLane() {
                 Social-Emotional Skills For Lifelong Success
               </h2>
               <p className="text-lg mb-6">
-                Through Conscious DisciplineÂ©, children learn
+                Through Conscious Discipline, children learn
                 to manage emotions, resolve conflicts, show
-                empathy, and build healthy relationshipsâ€”skills
+                empathy, and build healthy relationships—skills
                 that are just as important as academics.
               </p>
               <div className="bg-white rounded-2xl p-6 shadow-lg">
@@ -266,23 +266,23 @@ export function JrKinderLane() {
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">âœ“</span>
+                    <span className="text-[#EB9833]">✓</span>
                     <span>
                       Self-regulation and impulse control
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">âœ“</span>
+                    <span className="text-[#EB9833]">✓</span>
                     <span>
                       Conflict resolution and problem-solving
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">âœ“</span>
+                    <span className="text-[#EB9833]">✓</span>
                     <span>Empathy and perspective-taking</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">âœ“</span>
+                    <span className="text-[#EB9833]">✓</span>
                     <span>Confidence and perseverance</span>
                   </li>
                 </ul>
@@ -378,14 +378,12 @@ export function JrKinderLane() {
               their hard work and prepares them for the exciting
               journey ahead.
             </p>
-            <a
-              href="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZwLDfcYl0uxmGu"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/schedule-tour"
               className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-black/90 transition inline-block"
             >
               Schedule a Tour & See The Difference
-            </a>
+            </Link>
           </div>
         </div>
       </section>

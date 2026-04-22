@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { Link } from "react-router";
 
 export function ParentReviews() {
   const reviews = [
@@ -183,20 +184,18 @@ export function ParentReviews() {
             raving about
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZwLDfcYl0uxmGu"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/schedule-tour"
               className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-black/90 transition inline-block text-center"
             >
               Schedule a Tour
-            </a>
-            <a
-              href="/schedule-tour"
+            </Link>
+            <Link
+              to="/tuition-support"
               className="bg-white text-[#EB9833] px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition inline-block text-center"
             >
               Get Pricing Info
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
 import { MessageCircle, HelpCircle, Phone } from 'lucide-react';
+import { Link } from 'react-router';
 
 export function FAQAccordion() {
   const faqs = [
@@ -17,7 +18,7 @@ export function FAQAccordion() {
     },
     {
       question: "How do you manage teacher-parent communication?",
-      answer: "We are a paper-free school and are happy to receive parent emails and text messages. Each class has an IPad for Tadpoles© daily reports, pictures, videos, parent notes, and more. There is a constant two-way communication channel between you and your child's teacher, so you never miss a beat."
+      answer: "We are a paper-free school and are happy to receive parent emails and text messages. Each class has an iPad with the Tadpoles app for daily reports, pictures, videos, parent notes, and more. There is a constant two-way communication channel between you and your child's teacher, so you never miss a beat."
     },
     {
       question: "Do you use technology in the classroom?",
@@ -76,14 +77,12 @@ export function FAQAccordion() {
               </div>
             </div>
 
-            <a
-              href="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZwLDfcYl0uxmGu"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/schedule-tour"
               className="bg-[#EB9833] text-white px-8 py-4 rounded-full font-semibold hover:bg-opacity-90 transition inline-block shadow-lg w-fit"
             >
               Schedule a Tour
-            </a>
+            </Link>
           </div>
 
           {/* Right Column - Accordion */}

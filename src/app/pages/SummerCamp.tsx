@@ -8,6 +8,7 @@
   Camera,
   Heart,
 } from "lucide-react";
+import { Link } from "react-router";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export function SummerCamp() {
@@ -112,7 +113,7 @@ export function SummerCamp() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-[#EDE3D9] rounded-2xl p-8">
               <h3 className="mb-4 text-[#EB9833]">
-                ðŸŒŠ Week 1: Ocean Explorers
+                Week 1: Ocean Explorers
               </h3>
               <p className="mb-4">
                 Dive into marine biology, ocean crafts, and
@@ -125,7 +126,7 @@ export function SummerCamp() {
 
             <div className="bg-[#EDE3D9] rounded-2xl p-8">
               <h3 className="mb-4 text-[#EB9833]">
-                ðŸš€ Week 2: Space Cadets
+                Week 2: Space Cadets
               </h3>
               <p className="mb-4">
                 Explore the universe with astronomy, rocket
@@ -138,7 +139,7 @@ export function SummerCamp() {
 
             <div className="bg-[#EDE3D9] rounded-2xl p-8">
               <h3 className="mb-4 text-[#EB9833]">
-                ðŸ¦ Week 3: Safari Adventure
+                Week 3: Safari Adventure
               </h3>
               <p className="mb-4">
                 Learn about animals, habitats, and wildlife
@@ -151,7 +152,7 @@ export function SummerCamp() {
 
             <div className="bg-[#EDE3D9] rounded-2xl p-8">
               <h3 className="mb-4 text-[#EB9833]">
-                ðŸŽ¨ Week 4: Creative Arts
+                Week 4: Creative Arts
               </h3>
               <p className="mb-4">
                 Painting, sculpture, music, dance, and
@@ -164,7 +165,7 @@ export function SummerCamp() {
 
             <div className="bg-[#EDE3D9] rounded-2xl p-8">
               <h3 className="mb-4 text-[#EB9833]">
-                ðŸ”¬ Week 5: Mad Scientists
+                Week 5: Mad Scientists
               </h3>
               <p className="mb-4">
                 Exciting experiments, chemistry, physics, and
@@ -177,7 +178,7 @@ export function SummerCamp() {
 
             <div className="bg-[#EDE3D9] rounded-2xl p-8">
               <h3 className="mb-4 text-[#EB9833]">
-                ðŸ•ï¸ Week 6: Outdoor Explorers
+                Week 6: Outdoor Explorers
               </h3>
               <p className="mb-4">
                 Nature hikes, camping skills, and environmental
@@ -190,7 +191,7 @@ export function SummerCamp() {
 
             <div className="bg-[#EDE3D9] rounded-2xl p-8">
               <h3 className="mb-4 text-[#EB9833]">
-                ðŸŽ­ Week 7: Lights, Camera, Action!
+                Week 7: Lights, Camera, Action!
               </h3>
               <p className="mb-4">
                 Theater games, movie making, storytelling, and
@@ -203,7 +204,7 @@ export function SummerCamp() {
 
             <div className="bg-[#EDE3D9] rounded-2xl p-8">
               <h3 className="mb-4 text-[#EB9833]">
-                ðŸ† Week 8: Sports & Games
+                Week 8: Sports & Games
               </h3>
               <p className="mb-4">
                 Team sports, Olympic games, and athletic
@@ -216,7 +217,7 @@ export function SummerCamp() {
 
             <div className="bg-[#EDE3D9] rounded-2xl p-8">
               <h3 className="mb-4 text-[#EB9833]">
-                ðŸŒ® Week 9: Around The World
+                Week 9: Around The World
               </h3>
               <p className="mb-4">
                 Explore cultures, foods, music, and traditions
@@ -231,16 +232,16 @@ export function SummerCamp() {
       </section>
 
       {/* Daily Schedule */}
-      <section className="py-20 bg-black text-white">
+      <section id="summer-camp-daily-schedule" className="scroll-mt-24 py-20 bg-black text-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="mb-6">
+            <h2 className="mb-6 !text-white">
               A Typical Day At Summer Camp
             </h2>
             <p className="text-lg max-w-3xl mx-auto">
               Each day is filled with a balance of structured
               activities, free play, outdoor time, and
-              enrichmentâ€”ensuring kids stay engaged and have a
+              enrichment—ensuring kids stay engaged and have a
               blast!
             </p>
           </div>
@@ -320,7 +321,7 @@ export function SummerCamp() {
                   <p className="text-[#6B6A64]">
                     See your child's summer adventures through
                     daily photos and videos shared via the
-                    PlaygroundÂ© app. Never miss a special
+                    Playground® app. Never miss a special
                     moment!
                   </p>
                 </div>
@@ -394,29 +395,29 @@ export function SummerCamp() {
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">â€¢</span>
+                    <span className="text-[#EB9833]">•</span>
                     <span>Space Center Houston</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">â€¢</span>
+                    <span className="text-[#EB9833]">•</span>
                     <span>Houston Zoo</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">â€¢</span>
+                    <span className="text-[#EB9833]">•</span>
                     <span>Children's Museum of Houston</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">â€¢</span>
+                    <span className="text-[#EB9833]">•</span>
                     <span>
                       Houston Museum of Natural Science
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">â€¢</span>
+                    <span className="text-[#EB9833]">•</span>
                     <span>Downtown Aquarium</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">â€¢</span>
+                    <span className="text-[#EB9833]">•</span>
                     <span>Nature Discovery Center</span>
                   </li>
                 </ul>
@@ -446,12 +447,18 @@ export function SummerCamp() {
             learning, and adventure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-black/90 transition">
+            <Link
+              to="/schedule-tour"
+              className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-black/90 transition inline-block text-center"
+            >
               Register Now
-            </button>
-            <button className="bg-white text-[#EB9833] px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition">
+            </Link>
+            <a
+              href="#summer-camp-daily-schedule"
+              className="bg-white text-[#EB9833] px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition inline-block text-center"
+            >
               View Full Schedule
-            </button>
+            </a>
           </div>
         </div>
       </section>

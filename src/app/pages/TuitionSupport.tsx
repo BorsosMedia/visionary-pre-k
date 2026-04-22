@@ -238,18 +238,18 @@ export function TuitionSupport() {
               </p>
               <ul className="space-y-2 text-[#6B6A64]">
                 <li>
-                  â€¢ Proof of employment or school enrollment
+                  • Proof of employment or school enrollment
                 </li>
                 <li>
-                  â€¢ Income verification for all household
+                  • Income verification for all household
                   members
                 </li>
                 <li>
-                  â€¢ Child's birth certificate and immunization
+                  • Child's birth certificate and immunization
                   records
                 </li>
                 <li>
-                  â€¢ Social Security numbers for household
+                  • Social Security numbers for household
                   members
                 </li>
               </ul>
@@ -264,15 +264,15 @@ export function TuitionSupport() {
               </p>
               <ul className="space-y-2 text-[#6B6A64]">
                 <li>
-                  â€¢ Dependent Care FSA (Flexible Spending
+                  • Dependent Care FSA (Flexible Spending
                   Account)
                 </li>
                 <li>
-                  â€¢ Childcare subsidies or reimbursement
+                  • Childcare subsidies or reimbursement
                   programs
                 </li>
-                <li>â€¢ Partnership with childcare centers</li>
-                <li>â€¢ Backup childcare benefits</li>
+                <li>• Partnership with childcare centers</li>
+                <li>• Backup childcare benefits</li>
               </ul>
             </div>
           </div>

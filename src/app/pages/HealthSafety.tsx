@@ -7,8 +7,16 @@
   Users,
   Heart,
   CheckCircle,
+  DoorOpen,
+  Utensils,
+  Palette,
+  Home,
 } from "lucide-react";
+import { Link } from "react-router";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import cleanSpacesImg from "../../imports/Super-Clean-Spaces-Keep-Your-Child-Healthy-And-Safe-1024x745.jpg";
+import fingerprintImg from "../../imports/Convenient-Fingerprint-Check-In-And-Check-Out-standard-scale-2_00x-gigapixel.jpg";
+import teachersImg from "../../imports/50-Yrs-Combined-Expertise-Shape-Your-Childs-Learning-1024x738.jpg";
 
 export function HealthSafety() {
   return (
@@ -138,8 +146,8 @@ export function HealthSafety() {
 
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <ImageWithFallback
-                src="https://c2cpreschool.org/wp-content/uploads/2021/02/C2C-Hero-1.jpg"
-                alt="Cleaning and sanitizing"
+                src={cleanSpacesImg}
+                alt="Bright, clean classroom spaces"
                 className="w-full h-[500px] object-cover"
               />
             </div>
@@ -153,8 +161,8 @@ export function HealthSafety() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
               <ImageWithFallback
-                src="https://c2cpreschool.org/wp-content/uploads/2021/02/C2C-Hero-1.jpg"
-                alt="Health screening"
+                src={fingerprintImg}
+                alt="Secure fingerprint check-in at arrival"
                 className="w-full h-[400px] object-cover"
               />
             </div>
@@ -175,23 +183,23 @@ export function HealthSafety() {
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">â€¢</span>
+                    <span className="text-[#EB9833]">•</span>
                     <span>
                       Temperature screening at drop-off
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">â€¢</span>
+                    <span className="text-[#EB9833]">•</span>
                     <span>Visual assessment for symptoms</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">â€¢</span>
+                    <span className="text-[#EB9833]">•</span>
                     <span>
                       Parent questionnaire about health status
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#EB9833]">â€¢</span>
+                    <span className="text-[#EB9833]">•</span>
                     <span>
                       Staff health monitoring throughout the day
                     </span>
@@ -220,7 +228,11 @@ export function HealthSafety() {
 
           <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <div className="bg-[#EDE3D9] rounded-2xl p-6 text-center">
-              <div className="text-4xl mb-3">ðŸšª</div>
+              <div className="flex justify-center mb-3">
+                <div className="w-14 h-14 rounded-full bg-[#EB9833] flex items-center justify-center">
+                  <DoorOpen className="w-7 h-7 text-white" aria-hidden />
+                </div>
+              </div>
               <h3 className="mb-2">Upon Arrival</h3>
               <p className="text-sm">
                 Immediate handwashing when entering the building
@@ -228,7 +240,11 @@ export function HealthSafety() {
             </div>
 
             <div className="bg-[#EDE3D9] rounded-2xl p-6 text-center">
-              <div className="text-4xl mb-3">ðŸ½ï¸</div>
+              <div className="flex justify-center mb-3">
+                <div className="w-14 h-14 rounded-full bg-[#EB9833] flex items-center justify-center">
+                  <Utensils className="w-7 h-7 text-white" aria-hidden />
+                </div>
+              </div>
               <h3 className="mb-2">Before Meals</h3>
               <p className="text-sm">
                 Thorough handwashing before every meal and snack
@@ -236,7 +252,11 @@ export function HealthSafety() {
             </div>
 
             <div className="bg-[#EDE3D9] rounded-2xl p-6 text-center">
-              <div className="text-4xl mb-3">ðŸŽ¨</div>
+              <div className="flex justify-center mb-3">
+                <div className="w-14 h-14 rounded-full bg-[#EB9833] flex items-center justify-center">
+                  <Palette className="w-7 h-7 text-white" aria-hidden />
+                </div>
+              </div>
               <h3 className="mb-2">After Activities</h3>
               <p className="text-sm">
                 Hands washed after messy play and outdoor time
@@ -244,7 +264,11 @@ export function HealthSafety() {
             </div>
 
             <div className="bg-[#EDE3D9] rounded-2xl p-6 text-center">
-              <div className="text-4xl mb-3">ðŸ‘‹</div>
+              <div className="flex justify-center mb-3">
+                <div className="w-14 h-14 rounded-full bg-[#EB9833] flex items-center justify-center">
+                  <Home className="w-7 h-7 text-white" aria-hidden />
+                </div>
+              </div>
               <h3 className="mb-2">Before Pickup</h3>
               <p className="text-sm">
                 Clean hands before going home
@@ -285,7 +309,7 @@ export function HealthSafety() {
               <Shield className="w-12 h-12 text-[#EB9833] mb-4" />
               <h3 className="mb-4">Fingerprint Check-In/Out</h3>
               <p>
-                ProcareÂ© System ensures only authorized
+                Procare® system ensures only authorized
                 individuals can pick up your child with secure
                 fingerprint verification.
               </p>
@@ -344,8 +368,8 @@ export function HealthSafety() {
               </div>
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <ImageWithFallback
-                  src="https://c2cpreschool.org/wp-content/uploads/2021/02/C2C-Hero-1.jpg"
-                  alt="Staff training"
+                  src={teachersImg}
+                  alt="Experienced teachers guiding young learners"
                   className="w-full h-[400px] object-cover"
                 />
               </div>
@@ -364,14 +388,12 @@ export function HealthSafety() {
             See our safety protocols in action and get peace of
             mind knowing your child is in good hands
           </p>
-          <a
-            href="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZwLDfcYl0uxmGu"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/schedule-tour"
             className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-black/90 transition inline-block"
           >
             Schedule a Tour & See For Yourself
-          </a>
+          </Link>
         </div>
       </section>
     </div>

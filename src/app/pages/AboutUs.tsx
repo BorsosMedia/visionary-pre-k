@@ -1,5 +1,9 @@
 ﻿import { Heart, Users, Target, Globe } from 'lucide-react';
+import { Link } from 'react-router';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import journeyImg from '../../imports/additions/A-Journey-Rooted-In-Personal-Experience.jpg';
+import adequateRatioImg from '../../imports/additions/An-Adequate-Ratio-Of-Attendance-Ensures-Safety.jpg';
+import adequateRatioImgAlt from '../../imports/additions/An-Adequate-Ratio-Of-Attendance-Ensures-Safety (1).jpg';
 
 export function AboutUs() {
   return (
@@ -62,8 +66,8 @@ export function AboutUs() {
 
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <ImageWithFallback
-                src="https://c2cpreschool.org/wp-content/uploads/2021/02/C2C-Hero-1.jpg"
-                alt="Caring teacher with children"
+                src={journeyImg}
+                alt="Director journey and caring classroom environment"
                 className="w-full h-[500px] object-cover"
               />
             </div>
@@ -125,6 +129,28 @@ export function AboutUs() {
         </div>
       </section>
 
+      {/* Safety & ratios (additions asset) */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div className="rounded-2xl overflow-hidden shadow-xl border border-[#D4C9BA]">
+              <ImageWithFallback
+                src={adequateRatioImg}
+                alt="Adequate staff ratios and attentive care in the classroom"
+                className="w-full h-[380px] lg:h-[420px] object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="mb-4">Safety Starts With The Right Ratios</h2>
+              <p className="text-lg text-[#6B6A64]">
+                Maintaining an adequate ratio of attendance helps every teacher stay present, responsive, and focused on
+                your child—so learning stays joyful and supervision stays consistent all day long.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Philosophy */}
       <section className="py-20 bg-[#EDE3D9]">
         <div className="max-w-7xl mx-auto px-6">
@@ -135,14 +161,23 @@ export function AboutUs() {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-12 shadow-lg max-w-4xl mx-auto">
-            <h3 className="mb-6 text-center text-[#EB9833]">A Philosophy That Bridges Gaps Through Education</h3>
-            <p className="text-lg text-center mb-6">
-              Combining fun academics and extracurricular activities prepares your child for success through Kindergarten and beyond.
-            </p>
-            <p className="text-center text-[#6B6A64]">
-              We're committed to ensuring every child has access to high-quality early childhood education that sets them up for lifelong success.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-xl border border-[#D4C9BA] order-2 lg:order-1">
+              <ImageWithFallback
+                src={adequateRatioImgAlt}
+                alt="Teachers engaged with children in a safe, supervised setting"
+                className="w-full h-[320px] lg:h-full min-h-[280px] object-cover"
+              />
+            </div>
+            <div className="bg-white rounded-2xl p-10 lg:p-12 shadow-lg border border-[#D4C9BA] order-1 lg:order-2">
+              <h3 className="mb-6 text-center text-[#EB9833]">A Philosophy That Bridges Gaps Through Education</h3>
+              <p className="text-lg text-center mb-6">
+                Combining fun academics and extracurricular activities prepares your child for success through Kindergarten and beyond.
+              </p>
+              <p className="text-center text-[#6B6A64]">
+                We're committed to ensuring every child has access to high-quality early childhood education that sets them up for lifelong success.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -184,20 +219,18 @@ export function AboutUs() {
             Experience the difference that quality early childhood education can make in your child's life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZwLDfcYl0uxmGu"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/schedule-tour"
               className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-black/90 transition inline-block text-center"
             >
               Schedule a Tour
-            </a>
-            <a
-              href="/schedule-tour"
+            </Link>
+            <Link
+              to="/tuition-support"
               className="bg-white text-[#EB9833] px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition inline-block text-center"
             >
               Get Pricing Info
-            </a>
+            </Link>
           </div>
         </div>
       </section>

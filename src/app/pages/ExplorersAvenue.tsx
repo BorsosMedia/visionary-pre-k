@@ -8,6 +8,7 @@ import {
   BookOpen,
   Lightbulb,
 } from "lucide-react";
+import { Link } from "react-router";
 import lifeSkillsImg from '../../imports/Your-Child-Gains-Life-Skills-And-Classroom-Basics-Now-1-1024x764.jpg';
 import nutritiousImg from '../../imports/Nutritious-Meals-With-Vegan-Options-At-No-Extra-Cost-1-1024x731.jpg';
 import musicImg from '../../imports/1.png';
@@ -381,14 +382,12 @@ export function ExplorersAvenue() {
             See how we inspire young learners to discover their
             world
           </p>
-          <a
-            href="https://app.tryplayground.com/form/nnWMx9xDZerzCyUSMiX9/ejyFZZwLDfcYl0uxmGu"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/schedule-tour"
             className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-black/90 transition inline-block"
           >
             Schedule a Tour
-          </a>
+          </Link>
         </div>
       </section>
     </div>
