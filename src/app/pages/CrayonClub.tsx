@@ -333,22 +333,6 @@ export function CrayonClub() {
           </div>
         </div>
       </section>
-
-      {/* CTA */}
-      <section className="py-20 bg-[#EB9833] text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="mb-6">
-            Make Your Mornings & Afternoons Easier!
-          </h2>
-          <p className="text-xl mb-8">
-            Give your child a safe, fun place to be before and
-            after school
-          </p>
-          <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-black/90 transition">
-            Enroll In Crayon Club Today
-          </button>
-        </div>
-      </section>
     </div>
   );
 }

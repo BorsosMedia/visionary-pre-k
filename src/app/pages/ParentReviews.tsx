@@ -183,20 +183,12 @@ export function ParentReviews() {
             Experience the care and education that parents are
             raving about
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/schedule-tour"
-              className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-black/90 transition inline-block text-center"
-            >
-              Schedule a Tour
-            </Link>
-            <Link
-              to="/tuition-support"
-              className="bg-white text-[#EB9833] px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition inline-block text-center"
-            >
-              Get Pricing Info
-            </Link>
-          </div>
+          <Link
+            to="/schedule-tour"
+            className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-black/90 transition inline-block text-center"
+          >
+            Schedule a Tour
+          </Link>
         </div>
       </section>
     </div>
