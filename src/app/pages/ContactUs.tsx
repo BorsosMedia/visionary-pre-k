@@ -24,8 +24,8 @@ export function ContactUs() {
                 <Phone className="w-8 h-8 text-white" />
               </div>
               <h3 className="mb-4">Call Us</h3>
-              <a href="tel:713-520-6633" className="text-[#EB9833] hover:underline">
-                (713) 520-6633
+              <a href="tel:832-662-8566" className="text-[#EB9833] hover:underline">
+                (832) 662-8566
               </a>
             </div>
 
@@ -102,7 +102,7 @@ export function ContactUs() {
                 <p className="font-semibold text-[#000000] mt-4">Programs Offered:</p>
                 <p>Two's, Pre K 3-4</p>
                 <a
-                  href="tel:713-520-6633"
+                  href="tel:832-662-8566"
                   className="inline-block mt-4 bg-[#EB9833] text-white px-6 py-3 rounded-full font-bold hover:bg-[#d88829] transition"
                 >
                   Call Location
@@ -119,7 +119,7 @@ export function ContactUs() {
                 <p className="font-semibold text-[#000000] mt-4">Programs Offered:</p>
                 <p>Two's, Pre K 3-4, After Schoolers</p>
                 <a
-                  href="tel:713-520-6633"
+                  href="tel:832-662-8566"
                   className="inline-block mt-4 bg-[#EB9833] text-white px-6 py-3 rounded-full font-bold hover:bg-[#d88829] transition"
                 >
                   Call Location

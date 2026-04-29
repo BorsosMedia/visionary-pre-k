@@ -11,12 +11,12 @@ export function Footer() {
   ];
 
   const about = [
-    { name: 'Center of Excellence', to: '/#excellence' },
-    { name: 'Texas Rising Star', to: '/#tsr' },
-    { name: 'Curriculum', to: '/#curriculum' },
-    { name: 'Daily Enrichments', to: '/#enrichments' },
-    { name: 'Testimonials', to: '/#testimonials' },
-    { name: 'FAQ', to: '/#faq' },
+    { name: 'Center of Excellence', to: '/about#excellence' },
+    { name: 'Texas Rising Star', to: '/about#tsr' },
+    { name: 'Curriculum', to: '/about#curriculum' },
+    { name: 'Daily Enrichments', to: '/about#enrichments' },
+    { name: 'Testimonials', to: '/about#testimonials' },
+    { name: 'FAQ', to: '/about#faq' },
   ];
 
   return (
@@ -33,9 +33,9 @@ export function Footer() {
               />
             </div>
             <div className="space-y-3 text-sm text-white/80">
-              <a href="tel:713-520-6633" className="flex items-center gap-2 hover:text-[#EB9833] transition">
+              <a href="tel:832-662-8566" className="flex items-center gap-2 hover:text-[#EB9833] transition">
                 <Phone className="w-4 h-4" />
-                <span>713-520-6633</span>
+                <span>(832) 662-8566</span>
               </a>
               <a href="mailto:info@cradles2crayons.com" className="flex items-center gap-2 hover:text-[#EB9833] transition">
                 <Mail className="w-4 h-4" />

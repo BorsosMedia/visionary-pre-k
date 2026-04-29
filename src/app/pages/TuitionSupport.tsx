@@ -203,10 +203,10 @@ export function TuitionSupport() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:713-520-6633"
+                  href="tel:832-662-8566"
                   className="bg-[#EB9833] text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-[#d88829] transition inline-block"
                 >
-                  Call 713-520-6633
+                  Call (832) 662-8566
                 </a>
                 <a
                   href="/schedule-tour"

@@ -44,86 +44,86 @@ export function Navigation() {
       {/* Main Navigation Bar */}
       <div className="border-b border-[#D4C9BA]">
         <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="grid grid-cols-3 items-center">
-            {/* Left - Navigation Links */}
-            <div className="hidden md:flex items-center gap-8">
-              <Link to="/" className="text-[#000000] hover:text-[#EB9833] transition font-medium">
-                Home
-              </Link>
-              <div
-                className="relative"
-                onMouseEnter={() => setProgramsOpen(true)}
-                onMouseLeave={() => setProgramsOpen(false)}
-              >
-                <button
-                  className="flex items-center gap-1 text-[#000000] hover:text-[#EB9833] transition font-medium"
-                >
-                  Programs <ChevronDown className="w-4 h-4" />
-                </button>
-                {programsOpen && (
-                  <div
-                    className="absolute top-full left-0 mt-0 w-64 bg-white rounded-2xl shadow-lg border border-[#D4C9BA] z-50"
-                  >
-                    <div className="p-2">
-                      <Link to="/explorers-avenue" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Explorer's Avenue</Link>
-                      <Link to="/jr-kinder-lane" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Jr. Kinder Lane</Link>
-                      <Link to="/crayon-club" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Crayon Club</Link>
-                      <Link to="/summer-camp" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Summer Camp</Link>
-                    </div>
-                  </div>
-                )}
-              </div>
-              <div
-                className="relative"
-                onMouseEnter={() => setAboutOpen(true)}
-                onMouseLeave={() => setAboutOpen(false)}
-              >
-                <button
-                  className="flex items-center gap-1 text-[#000000] hover:text-[#EB9833] transition font-medium"
-                >
-                  About <ChevronDown className="w-4 h-4" />
-                </button>
-                {aboutOpen && (
-                  <div
-                    className="absolute top-full left-0 mt-0 w-64 bg-white rounded-2xl shadow-lg border border-[#D4C9BA] z-50"
-                  >
-                    <div className="p-2">
-                      <Link to="/about" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">About Us</Link>
-                      <Link to="/why-choose-us" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Why Choose Us</Link>
-                      <Link to="/tuition-support" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Tuition Support</Link>
-                      <Link to="/health-safety" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Health & Safety</Link>
-                      <Link to="/careers" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Careers</Link>
-                      <Link to="/parent-reviews" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Parent Reviews</Link>
-                      <Link to="/contact" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Contact Us</Link>
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
+          <div className="flex items-center justify-between gap-6">
+            {/* Left - Logo */}
+            <Link to="/" className="flex items-center">
+              <img
+                src={logoImg}
+                alt="Visionary Preschool"
+                className="h-16 w-auto object-contain"
+              />
+            </Link>
 
-            {/* Center - Logo */}
-            <div className="flex justify-center">
-              <Link to="/" className="flex items-center">
-                <img
-                  src={logoImg}
-                  alt="Visionary Preschool"
-                  className="h-16 w-auto object-contain"
-                />
-              </Link>
-            </div>
-
-            {/* Right - CTA Button */}
-            <div className="hidden md:flex justify-end">
+            {/* Right - Links + CTA (Desktop) */}
+            <div className="hidden md:flex items-center gap-10">
+              <div className="flex items-center gap-8">
+                <Link to="/" className="text-[#000000] hover:text-[#EB9833] transition font-medium">
+                  Home
+                </Link>
+                <div
+                  className="relative"
+                  onMouseEnter={() => setProgramsOpen(true)}
+                  onMouseLeave={() => setProgramsOpen(false)}
+                >
+                  <button
+                    className="flex items-center gap-1 text-[#000000] hover:text-[#EB9833] transition font-medium"
+                  >
+                    Programs <ChevronDown className="w-4 h-4" />
+                  </button>
+                  {programsOpen && (
+                    <div
+                      className="absolute top-full left-0 mt-0 w-64 bg-white rounded-2xl shadow-lg border border-[#D4C9BA] z-50"
+                    >
+                      <div className="p-2">
+                        <Link to="/explorers-avenue" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Explorer's Avenue</Link>
+                        <Link to="/jr-kinder-lane" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Jr. Kinder Lane</Link>
+                        <Link to="/crayon-club" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Crayon Club</Link>
+                        <Link to="/summer-camp" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Summer Camp</Link>
+                      </div>
+                    </div>
+                  )}
+                </div>
+                <div
+                  className="relative"
+                  onMouseEnter={() => setAboutOpen(true)}
+                  onMouseLeave={() => setAboutOpen(false)}
+                >
+                  <button
+                    className="flex items-center gap-1 text-[#000000] hover:text-[#EB9833] transition font-medium"
+                  >
+                    About <ChevronDown className="w-4 h-4" />
+                  </button>
+                  {aboutOpen && (
+                    <div
+                      className="absolute top-full left-0 mt-0 w-64 bg-white rounded-2xl shadow-lg border border-[#D4C9BA] z-50"
+                    >
+                      <div className="p-2">
+                        <Link to="/about" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">About Us</Link>
+                        <Link to="/why-choose-us" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Why Choose Us</Link>
+                        <Link to="/tuition-support" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Tuition Support</Link>
+                        <Link to="/health-safety" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Health & Safety</Link>
+                        <Link to="/contact" className="block px-4 py-3 hover:bg-[#EDE3D9] rounded-xl transition">Contact Us</Link>
+                      </div>
+                    </div>
+                  )}
+                </div>
+                <Link to="/careers" className="text-[#000000] hover:text-[#EB9833] transition font-medium">
+                  Careers
+                </Link>
+                <Link to="/parent-reviews" className="text-[#000000] hover:text-[#EB9833] transition font-medium">
+                  Parent Reviews
+                </Link>
+              </div>
               <Link
                 to="/schedule-tour"
-                className="bg-[#000000] text-white px-8 py-3 rounded-full font-bold hover:bg-[#1a1a1a] transition uppercase tracking-wide text-sm"
+                className="bg-[#000000] text-white px-8 py-3 rounded-full font-bold hover:bg-[#1a1a1a] transition uppercase tracking-wide text-sm whitespace-nowrap"
               >
                 Schedule a Tour
               </Link>
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden col-start-3 flex justify-end">
+            <div className="md:hidden flex justify-end">
               <button
                 className="text-[#000000]"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -148,9 +148,10 @@ export function Navigation() {
                 <Link to="/why-choose-us" className="pl-4 text-[#6B6A64] hover:text-[#EB9833]">Why Choose Us</Link>
                 <Link to="/tuition-support" className="pl-4 text-[#6B6A64] hover:text-[#EB9833]">Tuition Support</Link>
                 <Link to="/health-safety" className="pl-4 text-[#6B6A64] hover:text-[#EB9833]">Health & Safety</Link>
+                <Link to="/contact" className="pl-4 text-[#6B6A64] hover:text-[#EB9833]">Contact Us</Link>
+                <div className="font-semibold text-[#000000] mb-2 mt-4">More</div>
                 <Link to="/careers" className="pl-4 text-[#6B6A64] hover:text-[#EB9833]">Careers</Link>
                 <Link to="/parent-reviews" className="pl-4 text-[#6B6A64] hover:text-[#EB9833]">Parent Reviews</Link>
-                <Link to="/contact" className="pl-4 text-[#6B6A64] hover:text-[#EB9833]">Contact Us</Link>
                 <Link
                   to="/schedule-tour"
                   className="bg-[#000000] text-white px-6 py-3 rounded-full font-bold text-center mt-4 uppercase tracking-wide text-sm"

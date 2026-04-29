@@ -62,7 +62,7 @@ export function FAQAccordion() {
                 </div>
                 <div>
                   <p className="font-semibold text-[#000000] mb-1">Call Us</p>
-                  <a href="tel:713-520-6633" className="text-[#EB9833] hover:underline">713-520-6633</a>
+                  <a href="tel:832-662-8566" className="text-[#EB9833] hover:underline">(832) 662-8566</a>
                 </div>
               </div>
 

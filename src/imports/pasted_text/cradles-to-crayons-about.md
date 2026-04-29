@@ -1,5 +1,5 @@
 Skip to content
-713-520-6633
+(832) 662-8566
 E-mail
 4930 Travis St, Houston, TX 77002
 Facebook-f
@@ -116,7 +116,7 @@ Transform Your Child’s Early Learning Experience!
 Get Pricing & Details Now
 Cradles 2 Crayons Early Learning Academy
 4930 Travis St, Houston, TX 77002, United States
-713-520-6633
+(832) 662-8566
 E-mail
 7:00 AM - 5:45 PM (Mon - Fri)
 Have Questions?

@@ -39,7 +39,7 @@ export function Hero() {
             Schedule a Tour
           </Link>
           <a
-            href="tel:713-520-6633"
+            href="tel:832-662-8566"
             className="group bg-white text-[#000000] px-10 py-5 rounded-full font-bold text-lg hover:bg-[#EB9833] hover:text-white transition shadow-2xl flex items-center justify-center gap-3"
           >
             <MessageCircle className="w-6 h-6" />

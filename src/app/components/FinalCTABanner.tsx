@@ -36,11 +36,11 @@ export function FinalCTABanner() {
             Schedule Your Tour Today
           </Link>
           <a
-            href="tel:713-520-6633"
+            href="tel:832-662-8566"
             className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-12 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-[#EB9833] transition shadow-xl flex items-center justify-center gap-2"
           >
             <Phone className="w-5 h-5" />
-            Call (713) 520-6633
+            Call (832) 662-8566
           </a>
         </div>
 

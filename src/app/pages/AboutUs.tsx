@@ -1,6 +1,12 @@
 ﻿import { Heart, Users, Target, Globe } from 'lucide-react';
 import { Link } from 'react-router';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import { CenterOfExcellence } from '../components/CenterOfExcellence';
+import { TexasRisingStar } from '../components/TexasRisingStar';
+import { CurriculumTeachers } from '../components/CurriculumTeachers';
+import { DailyEnrichments } from '../components/DailyEnrichments';
+import { Testimonials } from '../components/Testimonials';
+import { FAQAccordion } from '../components/FAQAccordion';
 import journeyImg from '../../imports/additions/A-Journey-Rooted-In-Personal-Experience.jpg';
 import adequateRatioImg from '../../imports/additions/An-Adequate-Ratio-Of-Attendance-Ensures-Safety.jpg';
 import adequateRatioImgAlt from '../../imports/additions/An-Adequate-Ratio-Of-Attendance-Ensures-Safety (1).jpg';
@@ -210,6 +216,14 @@ export function AboutUs() {
           </div>
         </div>
       </section>
+
+      {/* More About Us (migrated from Home) */}
+      <CenterOfExcellence />
+      <TexasRisingStar />
+      <CurriculumTeachers />
+      <DailyEnrichments />
+      <Testimonials />
+      <FAQAccordion />
 
       {/* Final CTA */}
       <section className="py-20 bg-[#EB9833] text-white">

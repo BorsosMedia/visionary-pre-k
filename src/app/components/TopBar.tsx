@@ -9,9 +9,9 @@ export function TopBar() {
           <div className="bg-[#EB9833] text-white px-4 py-1 rounded-full font-medium">
             Now Enrolling for Fall 2026
           </div>
-          <a href="tel:713-520-6633" className="flex items-center gap-2 hover:opacity-80">
+          <a href="tel:832-662-8566" className="flex items-center gap-2 hover:opacity-80">
             <Phone className="w-4 h-4" />
-            <span>713-520-6633</span>
+            <span>(832) 662-8566</span>
           </a>
           <a href="mailto:info@visionaryprek.com" className="hidden sm:flex items-center gap-2 hover:opacity-80">
             <Mail className="w-4 h-4" />
